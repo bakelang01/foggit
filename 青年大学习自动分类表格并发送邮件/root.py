@@ -3,6 +3,14 @@
 # 创建时间：2022/5/19 21:59
 # 文件名：root.py.py
 
+"""
+json文件中是老师的邮箱，要运行先更改json中的邮箱地址，不可乱来！
+"""
+
+"""
+这个小程序用到了tkinter模块进行gui编写，用到了自动发邮箱的模块，也用到了处理表格的openpyxl模块，算是一次小综合的实践运用了
+"""
+
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 import json
