@@ -1,0 +1,83 @@
+#include<stdio.h>
+#include<stdlib.h>
+int A1(int a,int b)
+{
+	int z=a*b;
+	return z;
+}
+int A2(int c,int d)
+{
+	int e=c+d;
+	return e;
+}
+int A3(int f,int g)
+{
+	int h=f-g;
+	return h;
+}
+int A4(int x,int y)
+{
+	int p=x/y;
+	return p;
+}
+int main()
+{
+	int num1,num2,sum,i,n;//定义出整型函数
+	//输入两个整型数字（待乘对象），存放在num1，2的位置上
+	scanf("%d",&i);
+	if (i==1){
+		printf("你选择的是乘法\n");
+		scanf("%d%d",&num1,&num2);
+	    sum=A1(num1,num2);//求乘积并将结果赋值给sum
+		printf("乘积=    %d\n\n",sum);}
+	else if(i==2){
+		printf("你选择的是加法\n");
+		scanf("%d%d",&num1,&num2);
+	    sum=A2(num1,num2);
+		printf("和=    %d\n\n",sum);
+	}else if(i==3){ 
+		printf("你选择的是减法\n");
+		scanf("%d%d",&num1,&num2);
+	    sum=A3(num1,num2);
+		printf("差=    %d\n\n",sum);}//在屏幕上打印出乘积的结
+	else {
+	    printf("你选择的是除法\n");
+	    scanf("%d%d",&num1,&num2);
+		sum=A4(num1,num2);
+		printf("商=    %d\n\n",sum);
+	}
+	//彩蛋
+	{
+		sum==1112? printf("你可爱的男朋友今天出生啦！！他18年后就来见你咯！\n"):printf("\0");
+		sum==325?printf("小依依出来了。嚯嚯嚯！\n"):printf("\0");
+		sum==1204?printf("从这之后，就有了我们哦！\n"):printf("\0");
+		sum==11?printf("依依加油，依依冲呀，我为依依痴，为依依狂，为依依哐哐撞大墙\n"):printf("\0");
+		sum==1?printf("1代表开始，也就是我们美丽故事的开始哦\n"):printf("\0");
+		sum==111?printf("这个位置是小聪明的\n"):printf("\0");
+		sum==99?printf("我们的结果哦，嘿嘿！mua你一口\n"):printf("\0");
+		sum==0?printf("静下心来想你，\n我觉得一切都美好的不可思议！\n"):printf("\0");
+		sum==88?printf("在呢，叫我干嘛呢\n"):printf("\0");
+		sum==100?printf("依依加油变优秀哦，每天都100分\n"):printf("\0");
+		sum==60?printf("及格万岁，乖仔要科科都及格\n"):printf("\0");
+		sum==700?printf("猪猪，请你每天这个时间起来\n"):printf("\0");
+		sum==20301204?printf("嘿嘿，依依，今天是我们的结婚纪念日哦，想不到吧，我现在是2021年10月28日的晚上。\n在这里，我祝愿你们纪念日快乐哦！\n   ——永远爱你的浪浪\n"):printf("\0");
+		sum==2029?printf("我们结婚吧！！\n 这是20岁的浪浪和28岁的浪浪，共同向李蝶依女士求婚\n 嫁给我吧！\n"):printf("\0");
+	while(sum==111111&&i<10000)
+	{
+		printf("全是依依依依依依依依依依\n");
+		i=i++;
+	}
+	while(sum==520&&n<52000)
+	{
+		printf("浪浪爱依依\n依依爱浪浪\n");
+		n=n++;
+	}
+	if(n==52001)
+	  {
+	    printf("\n\n反正就是宇宙五敌的爱你\n\n");
+	}
+}
+
+	system("pause");//表示暂停，将程序运行的结果停止在窗口
+	return 0;//返回一个整型数值
+}
